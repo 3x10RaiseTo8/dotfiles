@@ -1,0 +1,28 @@
+[init]
+  defaultBranch = main
+[user]
+  name = Abhishek Singh
+  email = 87878794+3x10RaiseTo8@users.noreply.github.com
+
+[core]
+  editor = vim  
+  editor = "code --wait"  # For Visual Studio Code (requires the code package)
+
+[alias]
+  # Common aliases
+  co = checkout
+  ci = commit -m
+  st = status
+  br = branch
+  # Example alias with argument
+  log = log -p --graph --decorate --pretty=oneline
+
+[color]
+  # Enable colored output for various Git commands
+  ui = true
+  diff = auto
+  status = auto
+  branch = auto
+
+[push]
+  default = current  # Push to the currently tracked branch by default
