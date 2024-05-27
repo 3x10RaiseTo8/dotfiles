@@ -1,5 +1,6 @@
 [init]
   defaultBranch = main
+
 [user]
   name = Abhishek Singh
   email = 87878794+3x10RaiseTo8@users.noreply.github.com
@@ -26,3 +27,11 @@
 
 [push]
   default = current  # Push to the currently tracked branch by default
+
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
