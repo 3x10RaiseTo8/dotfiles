@@ -17,7 +17,7 @@ history = 10000
 
 [window]
 dimensions = { columns = 80, lines = 25 }
-opacity = 0.7                             #0.8
+opacity = 0.8
 padding = { x = 10, y = 6 }
 
 [cursor]
