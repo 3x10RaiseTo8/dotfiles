@@ -52,9 +52,7 @@ foreground = "0xd5c4a1"
 
 [font]
 size = 16.0
-
-[font.normal]
-family = "FiraMono Nerd Font"
+normal = { family = "FiraMono Nerd Font Mono", style = "Regular" }
 
 [[keyboard.bindings]]
 action = "Paste"
@@ -67,6 +65,13 @@ key = "C"
 mods = "Alt"
 
 [scrolling]
-history = 0
+history = 10000
 
 [window]
+dimensions = { columns = 80, lines = 25 }
+opacity = 0.8
+padding = { x = 10, y = 6 }
+
+[cursor]
+style = { blinking = "On" }
+blink_interval = 300
