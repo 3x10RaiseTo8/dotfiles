@@ -100,6 +100,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export PATH="$PATH:/home/abhishek/.local/bin"
+
+
 # Starship
 eval "$(starship init zsh)"
 export NVM_DIR="$HOME/.nvm"
