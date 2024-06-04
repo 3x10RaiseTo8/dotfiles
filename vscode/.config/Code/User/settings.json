@@ -1,37 +1,53 @@
 {
-  "vim.camelCaseMotion.enable": true,
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
-    }
-  ],
-  "workbench.sideBar.location": "right",
-  "editor.fontSize": 18,
+  // Editor
+  "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
+  "editor.fontSize": 18,
+  "editor.stickyScroll.enabled": false,
+  "editor.wordWrap": "on",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+  // Workbench
+  "workbench.sideBar.location": "right",
+  "workbench.colorTheme": "GitHub Dark Default",
   "workbench.iconTheme": "vscode-icons",
   "workbench.startupEditor": "none",
+  // Terminal
   "terminal.integrated.defaultProfile.windows": "Command Prompt",
-  "remoteHub.commitDirectlyWarning": "off",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.fontFamily": "'FiraMono Nerd Font', monospace",
+  // Git
   "git.autofetch": true,
-  "editor.formatOnSave": true,
-  "[markdown]": {
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
-    "editor.formatOnSave": true
-  },
-  "editor.stickyScroll.enabled": false,
-  "workbench.editorAssociations": {
-    "*.db": "default"
-  },
-  "editor.wordWrap": "on",
-  "continue.enableTabAutocomplete": false,
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  "git.confirmSync": true,
+  // Python
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff"
   },
+  // Markdown Settings
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  // VSCodeVim Settings
+  "vim.camelCaseMotion.enable": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  // Other Extensions
   "vsicons.dontShowNewVersionMessage": true,
-  "git.confirmSync": false,
-  "terminal.integrated.fontFamily": "'FiraMono Nerd Font', monospace"
+  "markdown.extension.orderedList.autoRenumber": true,
+  "markdown.extension.tableFormatter.enabled": true,
+  "markdown.extension.toc.updateOnSave": true,
+  "markdown.preview.doubleClickToSwitchToEditor": true,
 }
