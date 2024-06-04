@@ -10,6 +10,7 @@
     "comments": false,
     "strings": true
   },
+  "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace",
   // Workbench
   "workbench.sideBar.location": "right",
   "workbench.colorTheme": "GitHub Dark Default",
@@ -29,7 +30,7 @@
   // Markdown Settings
   "[markdown]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
   },
   // VSCodeVim Settings
   "vim.camelCaseMotion.enable": true,
@@ -50,4 +51,10 @@
   "markdown.extension.tableFormatter.enabled": true,
   "markdown.extension.toc.updateOnSave": true,
   "markdown.preview.doubleClickToSwitchToEditor": true,
+  "markdownlint.config": {
+    "default": true,
+    "MD029": {
+      "style": "ordered"
+    }
+  },
 }
