@@ -59,4 +59,5 @@
       "style": "ordered"
     }
   },
+  "jupyter.askForKernelRestart": false,
 }
