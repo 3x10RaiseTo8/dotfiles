@@ -12,8 +12,8 @@
     "comments": false,
     "strings": true
   },
-  "window.titleBarStyle": "custom",
   "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace",
+  "window.titleBarStyle": "custom",
   // Workbench
   "workbench.sideBar.location": "right",
   "workbench.colorTheme": "GitHub Dark Default",
