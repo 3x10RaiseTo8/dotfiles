@@ -12,6 +12,7 @@
     "comments": false,
     "strings": true
   },
+  "window.titleBarStyle": "custom",
   "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace",
   // Workbench
   "workbench.sideBar.location": "right",
@@ -38,13 +39,8 @@
   "vim.camelCaseMotion.enable": true,
   "vim.insertModeKeyBindings": [
     {
-      "before": [
-        "j",
-        "j"
-      ],
-      "after": [
-        "<Esc>"
-      ]
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
     }
   ],
   // Other Extensions
@@ -60,4 +56,7 @@
     }
   },
   "jupyter.askForKernelRestart": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

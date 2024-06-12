@@ -1,5 +1,7 @@
 # dotfiles
 
 `stow */`
-or 
+or
 `stow foldername`
+
+nvim config taken from kickstart.nvim
