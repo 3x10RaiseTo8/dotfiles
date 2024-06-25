@@ -4,6 +4,7 @@
 [user]
   name = Abhishek Singh
   email = 87878794+3x10RaiseTo8@users.noreply.github.com
+	signingkey = 222BAD23715EF01B
 
 [core]
   editor = vim  
