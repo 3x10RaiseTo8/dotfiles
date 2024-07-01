@@ -25,6 +25,8 @@ style = { blinking = "On" }
 blink_interval = 300
 
 # XTerm's default colors
+[colors]
+# transparent_background_colors = true
 
 # Default colors
 [colors.primary]

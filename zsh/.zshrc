@@ -123,3 +123,6 @@ alias pn=pnpm
 
 # Starship
 eval "$(starship init zsh)"
+
+# Aliases
+alias sup=sudo dnf upgrade --refresh
