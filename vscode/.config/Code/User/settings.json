@@ -61,5 +61,13 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "python.createEnvironment.trigger": "off",
-  "notebook.output.wordWrap": true
+  "notebook.output.wordWrap": true,
+  "[lua]": {
+    "editor.quickSuggestions": {
+      "comments": "inline",
+      "other": "on",
+      "strings": "on"
+    },
+    "editor.semanticHighlighting.enabled": true
+  }
 }
