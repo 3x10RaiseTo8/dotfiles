@@ -69,5 +69,12 @@
       "strings": "on"
     },
     "editor.semanticHighlighting.enabled": true
-  }
+  },
+  "remote.SSH.defaultExtensions": [
+    "gitpod.gitpod-remote-ssh"
+  ],
+  "remote.SSH.remotePlatform": {
+    "*.gitpod.io": "linux"
+  },
+  "redhat.telemetry.enabled": false
 }
