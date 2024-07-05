@@ -11,7 +11,7 @@
     "comments": false,
     "strings": true
   },
-  "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace",
+  "editor.fontFamily": "'FiraMono Nerd Font', 'Fira Code', 'Droid Sans Mono', monospace",
   "window.titleBarStyle": "custom",
   // Workbench
   "workbench.sideBar.location": "right",
@@ -70,9 +70,7 @@
     },
     "editor.semanticHighlighting.enabled": true
   },
-  "remote.SSH.defaultExtensions": [
-    "gitpod.gitpod-remote-ssh"
-  ],
+  "remote.SSH.defaultExtensions": ["gitpod.gitpod-remote-ssh"],
   "remote.SSH.remotePlatform": {
     "*.gitpod.io": "linux"
   },
