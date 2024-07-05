@@ -1,7 +1,7 @@
 import = ["~/.config/alacritty/themes/catppuccin_mocha.toml"]
 
 [font]
-size = 16
+size = 15
 normal = { family = "FiraMono Nerd Font Mono", style = "Regular" }
 
 [[keyboard.bindings]]
