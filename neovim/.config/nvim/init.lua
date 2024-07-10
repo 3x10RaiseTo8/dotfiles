@@ -16,10 +16,7 @@ require 'keymaps'
 -- [[ Install `lazy.nvim` plugin manager ]]
 require 'lazy-bootstrap'
 
-
-require('lazy').setup('plugins',
-
-{
+require('lazy').setup('plugins', {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
     -- default lazy.nvim defined Nerd Font icons, otherwise define a unicode icons table
@@ -38,9 +35,8 @@ require('lazy').setup('plugins',
       task = '📌',
       lazy = '💤 ',
     },
-  }
-}
-
-)
+  },
+})
 -- The line beneath this is called `modeline`. See `:help modeline`
--- vim: ts=2 sts=2 
+-- vim: ts=2 sts=2
+

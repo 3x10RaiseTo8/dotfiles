@@ -19,8 +19,10 @@ history = 20000
 
 [window]
 dimensions = { columns = 95, lines = 27 }
-opacity = 0.6
-padding = { x = 3, y = 3 }
+opacity = 0.8
+padding = { x = 2, y = 2 }
+dynamic_padding = true
+decorations = "None"
 
 [cursor]
 style = { blinking = "On" }

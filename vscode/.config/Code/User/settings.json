@@ -15,7 +15,7 @@
   "window.titleBarStyle": "custom",
   // Workbench
   "workbench.sideBar.location": "right",
-  "workbench.colorTheme": "GitHub Dark Default",
+  "workbench.colorTheme": "Quiet Light",
   "workbench.iconTheme": "vscode-icons",
   "workbench.startupEditor": "none",
   "workbench.editor.tabSizing": "fixed",
@@ -38,12 +38,13 @@
   },
   // VSCodeVim Settings
   "vim.camelCaseMotion.enable": true,
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
-    }
-  ],
+  // "vim.insertModeKeyBindings": [
+  //   {
+  //     "before": ["j", "j"],
+  //     "after": ["<Esc>"]
+  //   }
+  // ],
+  // Removed because capslock remapped to esc
   // Other Extensions
   "vsicons.dontShowNewVersionMessage": true,
   "markdown.extension.orderedList.autoRenumber": true,
