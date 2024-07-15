@@ -1,6 +1,7 @@
 {
   // Editor
   "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
   "editor.minimap.enabled": false,
   "editor.fontSize": 18,
   "editor.stickyScroll.enabled": false,
@@ -75,5 +76,11 @@
   "remote.SSH.remotePlatform": {
     "*.gitpod.io": "linux"
   },
-  "redhat.telemetry.enabled": false
+  "redhat.telemetry.enabled": false,
+  "notebook.editorOptionsCustomizations": {
+    "editor.tabSize": 4,
+    "editor.indentSize": 4,
+    "editor.insertSpaces": true
+  },
+  "gitlens.launchpad.indicator.enabled": false
 }
