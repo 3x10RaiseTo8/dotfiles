@@ -18,7 +18,7 @@ mods = "Alt"
 history = 20000
 
 [window]
-dimensions = { columns = 95, lines = 27 }
+dimensions = { columns = 115, lines = 28 }
 opacity = 0.8
 padding = { x = 2, y = 2 }
 dynamic_padding = true
