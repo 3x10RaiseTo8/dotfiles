@@ -28,6 +28,7 @@
   // Git
   "git.autofetch": true,
   "git.confirmSync": true,
+  "git.postCommitCommand": "push",
   // Python
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff"
