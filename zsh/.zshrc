@@ -126,3 +126,4 @@ eval "$(starship init zsh)"
 
 # Aliases
 alias sup="sudo dnf upgrade --refresh"
+source ~/.env
