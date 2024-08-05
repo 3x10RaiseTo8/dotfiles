@@ -126,6 +126,7 @@ eval "$(starship init zsh)"
 
 # Rust Cargo
 . "$HOME/.cargo/env"
+alias book="BROWSER=/usr/bin/firefox rustup doc --book"
 
 # Aliases
 alias sup="sudo dnf upgrade --refresh"
