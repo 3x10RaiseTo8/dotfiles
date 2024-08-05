@@ -124,6 +124,9 @@ alias pn=pnpm
 # Starship
 eval "$(starship init zsh)"
 
+# Rust Cargo
+. "$HOME/.cargo/env"
+
 # Aliases
 alias sup="sudo dnf upgrade --refresh"
 source ~/.env
