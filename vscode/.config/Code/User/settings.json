@@ -1,5 +1,6 @@
 {
   // Editor
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "editor.minimap.enabled": false,
@@ -14,6 +15,7 @@
   },
   "editor.fontFamily": "'FiraMono Nerd Font', 'Fira Code', 'Droid Sans Mono', monospace",
   "window.titleBarStyle": "custom",
+
   // Workbench
   "workbench.sideBar.location": "right",
   "workbench.colorTheme": "Catppuccin Mocha",
@@ -21,23 +23,28 @@
   "workbench.startupEditor": "none",
   "workbench.editor.tabSizing": "fixed",
   "workbench.editor.tabSizingFixedMaxWidth": 200,
+
   // Terminal
   "terminal.integrated.defaultProfile.windows": "Command Prompt",
   "terminal.integrated.defaultProfile.linux": "zsh",
   "terminal.integrated.fontFamily": "'FiraMono Nerd Font', monospace",
+
   // Git
   "git.autofetch": true,
   "git.confirmSync": true,
   "git.postCommitCommand": "push",
+
   // Python
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff"
   },
+
   // Markdown Settings
   "[markdown]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
   },
+
   // VSCodeVim Settings
   "vim.camelCaseMotion.enable": true,
   // "vim.insertModeKeyBindings": [
@@ -47,6 +54,7 @@
   //   }
   // ],
   // Removed because capslock remapped to esc
+
   // Other Extensions
   "vsicons.dontShowNewVersionMessage": true,
   "markdown.extension.orderedList.autoRenumber": true,
@@ -59,9 +67,8 @@
       "style": "ordered"
     }
   },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+
+  // Jupyter Notebook and python
   "python.createEnvironment.trigger": "off",
   "python.analysis.nodeExecutable": "~/.nvm/versions/node/v20.13.1/bin/node",
   "python.defaultInterpreterPath": "/usr/bin/python",
@@ -73,6 +80,8 @@
     "editor.indentSize": 4,
     "editor.insertSpaces": true
   },
+
+  // Lua settings
   "[lua]": {
     "editor.quickSuggestions": {
       "comments": "inline",
@@ -81,6 +90,8 @@
     },
     "editor.semanticHighlighting.enabled": true
   },
+
+  // Gitpod
   "remote.SSH.defaultExtensions": ["gitpod.gitpod-remote-ssh"],
   "remote.SSH.remotePlatform": {
     "*.gitpod.io": "linux"
