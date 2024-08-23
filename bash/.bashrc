@@ -24,6 +24,10 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
+# Rust/Cargo
+. "$HOME/.cargo/env"
+source ~/.env
+
 # pyenv
 # export PYENV_ROOT="$HOME/.pyenv"
 # command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
@@ -31,6 +35,4 @@ unset rc
 # pyenv end
 
 eval "$(starship init bash)"
-
-. "$HOME/.cargo/env"
-source ~/.env
+eval "$(uv generate-shell-completion bash)"

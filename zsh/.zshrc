@@ -102,10 +102,14 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="$PATH:/home/abhishek/.local/bin"
 
+# Rust Cargo
+. "$HOME/.cargo/env"
+alias book="BROWSER=/usr/bin/firefox rustup doc --book" # when default browser is from flatpak
+
 # Node version manager
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # pnpm
 export PNPM_HOME="/home/abhishek/.local/share/pnpm"
@@ -123,10 +127,7 @@ alias pn=pnpm
 
 # Starship
 eval "$(starship init zsh)"
-
-# Rust Cargo
-. "$HOME/.cargo/env"
-alias book="BROWSER=/usr/bin/firefox rustup doc --book"
+eval "$(uv generate-shell-completion zsh)"
 
 # Aliases
 alias sup="sudo dnf upgrade --refresh"
