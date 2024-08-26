@@ -131,4 +131,7 @@ eval "$(uv generate-shell-completion zsh)"
 
 # Aliases
 alias sup="sudo dnf upgrade --refresh"
+alias ttt="tree -L 3 --dirsfirst"
+alias tt="tree -L 2 --dirsfirst"
+
 source ~/.env
