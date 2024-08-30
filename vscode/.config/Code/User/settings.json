@@ -99,5 +99,6 @@
     "*.gitpod.io": "linux"
   },
   "redhat.telemetry.enabled": false,
-  "gitlens.launchpad.indicator.enabled": false
+  "gitlens.launchpad.indicator.enabled": false,
+  "settingsSync.ignoredSettings": ["-python.defaultInterpreterPath"]
 }
