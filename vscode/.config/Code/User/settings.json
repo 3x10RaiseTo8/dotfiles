@@ -18,7 +18,7 @@
 
   // Workbench
   "workbench.sideBar.location": "right",
-  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.colorTheme": "Default Light+",
   "workbench.iconTheme": "vscode-icons",
   "workbench.startupEditor": "none",
   "workbench.editor.tabSizing": "fixed",
