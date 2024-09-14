@@ -70,7 +70,7 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git systemd rust)
+plugins=(git systemd rust pnpm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -118,6 +118,7 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 alias pn=pnpm
+. ~/completion-for-zsh.zsh
 
 # PyEnv
 # export PYENV_ROOT="$HOME/.pyenv"
@@ -135,3 +136,4 @@ alias ttt="tree -L 3 --dirsfirst"
 alias tt="tree -L 2 --dirsfirst"
 
 . ~/.env
+
