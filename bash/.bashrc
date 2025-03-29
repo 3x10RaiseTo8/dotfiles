@@ -36,3 +36,6 @@ source ~/.env
 
 eval "$(starship init bash)"
 eval "$(uv generate-shell-completion bash)"
+
+# Deno
+. "$HOME/.deno/env"

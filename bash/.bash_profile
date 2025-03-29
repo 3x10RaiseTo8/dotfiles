@@ -13,3 +13,4 @@ fi
 # eval "$(pyenv init -)"
 # end pyenv
 . "$HOME/.cargo/env"
+. "$HOME/.deno/env"

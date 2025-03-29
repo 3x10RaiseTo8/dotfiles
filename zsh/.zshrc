@@ -70,7 +70,7 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git systemd rust pnpm)
+plugins=(git systemd rust deno)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -100,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH="$PATH:/home/abhishek/.local/bin"
+export PATH="$PATH:$HOME/.local/bin"
 
 # Rust Cargo
 . "$HOME/.cargo/env"
@@ -112,7 +112,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
 
 # pnpm
-export PNPM_HOME="/home/abhishek/.local/share/pnpm"
+export PNPM_HOME="$HOME/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
@@ -120,11 +120,11 @@ esac
 alias pn=pnpm
 . ~/completion-for-zsh.zsh
 
-# PyEnv
-# export PYENV_ROOT="$HOME/.pyenv"
-# [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-# eval "$(pyenv init -)"
-# PyEnv end
+# Deno
+if [[ ":$FPATH:" != *":$HOME/.zsh/completions:"* ]]; then
+  export FPATH="$HOME/.zsh/completions:$FPATH"
+fi
+. "$HOME/.deno/env"
 
 # Starship
 eval "$(starship init zsh)"
@@ -135,5 +135,4 @@ alias sup="sudo dnf upgrade --refresh"
 alias ttt="tree -L 3 --dirsfirst"
 alias tt="tree -L 2 --dirsfirst"
 
-. ~/.env
-
+[ -f "$HOME/.env" ] && . "$HOME/.env"

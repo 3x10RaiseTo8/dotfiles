@@ -2,9 +2,9 @@
   defaultBranch = main
 
 [user]
-  name = Abhishek Singh
-  email = 87878794+3x10RaiseTo8@users.noreply.github.com
-	signingkey = 222BAD23715EF01B
+  # https://github.com/alrra/dotfiles/blob/main/src/git/gitconfig
+
+  useConfigOnly = true
 
 [core]
   editor = vim  
@@ -36,3 +36,14 @@
 [credential "https://gist.github.com"]
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
+
+[include]
+
+    # Load local configs.
+    # https://git-scm.com/docs/git-config#_includes
+    #
+    # [!] The following needs to remain at the end of this file in
+    #     order to allow any of the above configs to be overwritten
+    #     by the local ones
+
+    path = ~/.gitconfig.local

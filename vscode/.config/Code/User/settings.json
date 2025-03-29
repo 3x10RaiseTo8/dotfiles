@@ -1,24 +1,24 @@
 {
-  // Editor
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "window.titleBarStyle": "custom",
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "editor.minimap.enabled": false,
   "editor.fontSize": 18,
   "editor.stickyScroll.enabled": false,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.cursorSurroundingLines": 10,
   "editor.guides.bracketPairs": true,
   "editor.quickSuggestions": {
     "other": true,
     "comments": false,
     "strings": true
   },
+  "editor.smoothScrolling": true,
   "editor.fontFamily": "'FiraMono Nerd Font', 'Fira Code', 'Droid Sans Mono', monospace",
-  "window.titleBarStyle": "custom",
 
   // Workbench
   "workbench.sideBar.location": "right",
-  "workbench.colorTheme": "Default Light+",
+  "workbench.colorTheme": "Catppuccin Frappé",
   "workbench.iconTheme": "vscode-icons",
   "workbench.startupEditor": "none",
   "workbench.editor.tabSizing": "fixed",
@@ -31,17 +31,22 @@
 
   // Git
   "git.autofetch": true,
-  "git.confirmSync": true,
-  "git.postCommitCommand": "push",
+  "git.confirmSync": false,
 
   // Language Specific Settings
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff"
   },
 
+  "[typescript]": { "editor.defaultFormatter": "denoland.vscode-deno" },
+
   "[markdown]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
   "[toml]": {
@@ -55,6 +60,14 @@
       "strings": "on"
     },
     "editor.semanticHighlighting.enabled": true
+  },
+
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
   // VSCodeVim Settings
