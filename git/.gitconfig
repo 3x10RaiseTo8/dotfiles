@@ -26,6 +26,9 @@
   status = auto
   branch = auto
 
+[commit]
+  gpgSign = true
+
 [push]
   default = current  # Push to the currently tracked branch by default
 
